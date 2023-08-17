@@ -31,6 +31,10 @@ class Container:
                         resolved_value = self.get(v[1:])
 
                     args[k] = resolved_value
+                
+                if isinstance(v, tuple):
+                    resolved_value = (self.get(v[0][1:]), self.get(v[1][1:]))
+                    args[k] = resolved_value
 
                 if isinstance(v, list):
                     values = []
