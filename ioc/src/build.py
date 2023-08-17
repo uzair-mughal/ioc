@@ -1,8 +1,8 @@
 import os
 import yaml
 from typing import List
-from ioc.src import Scope
-from ioc.src import Container
+from ioc.src.scope import Scope
+from ioc.src.container import Container
 
 
 def build(file_paths: List[str], container=Container()) -> Container:

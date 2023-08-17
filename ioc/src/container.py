@@ -1,6 +1,6 @@
 from pydoc import locate
-from ioc.src import Scope
-from ioc.src.exceptions import InvalidDependencyError
+from ioc.src.scope import Scope
+from ioc.src.exceptions.invalid_dependency_error import InvalidDependencyError
 
 
 class Container:
