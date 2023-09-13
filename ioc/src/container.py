@@ -23,6 +23,10 @@ class Container:
                 if isinstance(v, int):
                     resolved_value = v
                     args[k] = resolved_value
+                
+                if isinstance(v, float):
+                    resolved_value = v
+                    args[k] = resolved_value
 
                 if isinstance(v, str):
                     resolved_value = v
